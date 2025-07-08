@@ -65,7 +65,7 @@ try {
 ### `uploads/`
 - Tempat file bukti donasi disimpan (dalam `formulir_donasi.php`, folder ini dibuat otomatis jika belum ada).
 
----
+
 
 ## 📦 Tabel Database `donasi`
 
