@@ -7,7 +7,7 @@ Sistem ini adalah **aplikasi web sederhana** untuk mengelola donasi, dibuat meng
 - Memilih jumlah donasi dari pilihan yang tersedia atau memasukkan sendiri (seperti Google Form).
 - Data disimpan ke database untuk ditampilkan/diakses oleh admin.
 
----
+
 
 ## 🗂️ Struktur Folder
 
