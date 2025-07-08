@@ -5,7 +5,7 @@ Sistem ini adalah **aplikasi web sederhana** untuk mengelola donasi, dibuat meng
 - Mengisi formulir donasi secara online.
 - Mengunggah bukti transfer atau foto donasi.
 - Memilih jumlah donasi dari pilihan yang tersedia atau memasukkan sendiri (seperti Google Form).
-- Data disimpan ke database untuk ditampilkan/diakses oleh admin.
+- Data disimpan ke database untuk ditampilkan/diakses oleh admin
 
 
 
