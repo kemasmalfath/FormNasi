@@ -1,0 +1,324 @@
+/* ===================================
+   BUG FIXES DAN PERBAIKAN
+   =================================== */
+
+/* Fix untuk logo yang tidak center */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.logo-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Fix untuk form validation */
+.form-group input:invalid {
+  border-color: #ef4444;
+}
+
+.form-group input:invalid:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Fix untuk table overflow */
+.table-container {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  overflow-x: auto; /* Add horizontal scroll */
+}
+
+/* Fix untuk mobile table */
+@media (max-width: 768px) {
+  .data-table {
+    min-width: 700px;
+    font-size: 0.8rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Fix untuk stats grid responsive */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Fix untuk admin navbar */
+.admin-navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .admin-navbar .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-user {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Fix untuk form file input */
+.form-group input[type="file"] {
+  padding: 12px;
+  background: white;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="file"]:hover {
+  border-color: #3b82f6;
+  background: #f8fafc;
+}
+
+.form-group input[type="file"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Fix untuk alert positioning */
+.alert {
+  padding: 1.25rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border-left: 5px solid;
+  position: relative;
+  animation: slideInDown 0.5s ease-out;
+  word-wrap: break-word;
+}
+
+/* Fix untuk button states */
+.btn-primary:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-primary:disabled:hover {
+  background: #9ca3af;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Fix untuk status form */
+.status-form {
+  display: inline-block;
+}
+
+.status-form select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.status-form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Fix untuk hero section height */
+.hero-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 50vh;
+    padding: 3rem 0;
+  }
+}
+
+/* Fix untuk footer spacing */
+.footer {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fix untuk auth container */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fix untuk number formatting */
+.stat-info h3 {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  word-break: break-all;
+}
+
+@media (max-width: 480px) {
+  .stat-info h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Fix untuk loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fix untuk scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix untuk focus states */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Fix untuk print styles */
+@media print {
+  .navbar,
+  .admin-sidebar,
+  .btn-primary,
+  .btn-secondary,
+  .btn-logout,
+  .social-links,
+  .nav-toggle {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+
+  .admin-content {
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .data-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .data-table th,
+  .data-table td {
+    border: 1px solid #000 !important;
+    padding: 8px !important;
+    font-size: 10pt;
+  }
+
+  .stat-card {
+    border: 1px solid #000;
+    margin-bottom: 1rem;
+    page-break-inside: avoid;
+  }
+}
